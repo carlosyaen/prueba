@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+
+<body>
+  <div id="general">
+    <div id="listaFallos">
+
+      <h3>
+        {{title3}}
+      </h3>
+
+      <li *ngFor="let job of failureList">
+        <a href="www.google.es">{{job.name}}</a> , {{job.nExecution}}
+      </li>
+
+    </div>
+    <div id="listaExitos">
+
+      <h3>
+        {{title2}}
+      </h3>
+
+      <li *ngFor="let job of successList">
+        <a href="www.google.es"> {{job.name}}</a> , {{job.nExecution}}
+      </li>
+
+    </div>
+  </div>
+
+</body>
